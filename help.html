@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>XYZ Council - Dashboard Help</title>
+  <link rel="stylesheet" href="assets/dashboard-20260824-iols-ready-v1.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Council dashboard help navigation">
+      <nav>
+        <a href="index.html">Overview</a>
+        <a href="training.html">Training</a>
+        <a href="syt.html">SYT Detail</a>
+        <a href="membership.html">Districts</a>
+        <a href="unit-metrics.html">Unit Metrics</a>
+        <a href="commissioners.html">Coverage</a>
+        <a href="help.html" class="active" aria-current="page">Help</a>
+      </nav>
+      <div class="sidebar-note">
+        <span>Latest data refresh</span>
+        <strong>October 26, 2026</strong>
+      </div>
+    </aside>
+    <main class="help-document">
+      <header class="hero help-hero">
+        <div>
+          <p class="eyebrow">Dashboard guide</p>
+          <h1>How to use this dashboard <span class="title-data-date">XYZ Council</span></h1>
+          <p class="lede">A plain-language guide to the pages, filters, measures, data limits, and common troubleshooting steps.</p>
+        </div>
+        <div class="hero-actions help-actions">
+          <a class="detail-link hero-link" href="index.html">Back to overview</a>
+          <button class="detail-link hero-link print-button" type="button" onclick="window.print()">Print or save as PDF</button>
+        </div>
+      </header>
+
+      <section class="help-grid" aria-label="Dashboard help topics">
+        <article class="panel help-card help-card-wide" id="quick-start">
+          <p class="section-kicker">Start here</p>
+          <h2>Quick start</h2>
+          <ol>
+            <li>Confirm the refresh date in the left sidebar. This dashboard is a snapshot, not a live connection.</li>
+            <li>Start on Overview for the council-wide picture, then choose a district when you need a narrower view.</li>
+            <li>Use the detail pages for membership, training, unit metrics, SYT, or commissioner follow-up.</li>
+            <li>Use search and sort controls to find the records that need attention. Clear the controls to return to the full view.</li>
+            <li>Verify consequential decisions against the source workbook and the council systems of record.</li>
+          </ol>
+        </article>
+
+        <article class="panel help-card" id="pages">
+          <p class="section-kicker">Navigation</p>
+          <h2>What each page shows</h2>
+          <dl class="help-definitions">
+            <dt>Overview</dt><dd>Council KPIs, district comparisons, signals, priority units, and training highlights, and coverage.</dd>
+            <dt>Training</dt><dd>Training completion, direct-contact readiness, honor rolls, missing BALOO coverage, and untrained position records when available.</dd>
+            <dt>Districts</dt><dd>Membership movement, retention, unit health, training, SYT, leadership contacts, and priority signals by district.</dd>
+            <dt>Unit Metrics</dt><dd>Unit-health score distributions and the units scoring 0–2 that may warrant follow-up.</dd>
+            <dt>SYT Detail</dt><dd>Safeguarding Youth Training status, expiration windows, and exception records from the visible workbook tab.</dd><dt>Coverage</dt><dd>Commissioner roster, training and YPT fields, assigned units, duplicate roles, and district rollups.</dd>
+          </dl>
+        </article>
+
+        <article class="panel help-card" id="controls">
+          <p class="section-kicker">Controls</p>
+          <h2>Filters, search, and tables</h2>
+          <ul>
+            <li>The District control changes the page to one district. “Council” restores the council-wide view.</li>
+            <li>Page-specific controls may filter by status, section, training state, expiration window, or another relevant field.</li>
+            <li>Search is not case-sensitive and checks the visible subject fields described in its placeholder.</li>
+            <li>Wide tables scroll horizontally. Table headers remain visible while the table scrolls vertically.</li>
+            <li>Counts and charts update with the active filters. Filtering changes the view, not the source data.</li>
+          </ul>
+        </article>
+
+        <article class="panel help-card help-card-wide" id="definitions">
+          <p class="section-kicker">Reference</p>
+          <h2>Metric definitions</h2>
+          <div class="definition-columns">
+            <dl class="help-definitions">
+              <dt>Youth</dt><dd>Current youth membership reported in the source workbook.</dd>
+              <dt>YoY</dt><dd>Year-over-year change from the comparison membership value. Positive is growth; negative is decline.</dd>
+              <dt>Units</dt><dd>Units represented in the applicable workbook total or filtered scope.</dd>
+              <dt>Unit Metric</dt><dd>A workbook-provided unit-health score. Scores 0–2 are shown as priority follow-up; 4–5 are counted as healthy.</dd>
+              <dt>At Risk</dt><dd>The count or share of units in the priority 0–2 metric range.</dd>
+              <dt>Retention</dt><dd>The membership-retention value reported by the workbook; it is not inferred from the dashboard’s current filters.</dd>
+            </dl>
+            <dl class="help-definitions">
+              <dt>Training</dt><dd>The share of applicable position records marked trained in the available workbook training data.</dd>
+              <dt>Direct Contact</dt><dd>Training results limited to positions classified as direct-contact leadership in the source.</dd>
+              <dt>PIN</dt><dd>The PIN measure supplied on the workbook Membership tab.</dd>
+              <dt>SYT Detail</dt><dd>Safeguarding Youth Training detail can include current, due-soon, and expired records when supplied on a visible source tab.</dd><dt>Coverage</dt><dd>Commissioner people and assignments found on visible source tabs.</dd>
+              <dt>n/a</dt><dd>The value was missing, unavailable, or could not be calculated. It should not be read as zero.</dd>
+            </dl>
+          </div>
+        </article>
+
+        <article class="panel help-card" id="status">
+          <p class="section-kicker">Interpretation</p>
+          <h2>Status and color</h2>
+          <p><span class="status good">On Track</span> indicates the strongest current combination of available measures.</p>
+          <p><span class="status warn">Monitor</span> indicates a mixed signal worth watching.</p>
+          <p><span class="status bad">Needs Attention</span> indicates that one or more priority thresholds were triggered.</p>
+          <p class="muted">Colors and status labels are review cues based on dashboard thresholds. They are not official performance determinations and should not be used alone for personnel or program decisions.</p>
+        </article>
+
+        <article class="panel help-card" id="data">
+          <p class="section-kicker">Data</p>
+          <h2>Source, timing, and limits</h2>
+          <p><strong>Refresh represented:</strong> October 26, 2026<br><strong>Workbook:</strong> Dashboard - XYZ Council - 2026-10-26.xlsx</p>
+          <p><a class="detail-link" href="https://1drv.ms/x/c/da89e4b29f338fb5/IQBCjhDDpG6bRrBu2JpWItWPAWLmqZPUC7kCabgwTKSwXcw?e=GKfmzH" target="_blank" rel="noopener noreferrer">Open source workbook</a></p>
+          <ul>
+            <li>Values reflect the newest workbook used when this site was generated and may lag operational systems.</li>
+            <li>Available pages and fields depend on which workbook tabs and columns were present.</li>
+            <li>Rollups may differ from other reports because of timing, definitions, filters, duplicate registrations, or missing source fields.</li>
+          </ul>
+        </article>
+
+        <article class="panel help-card" id="privacy">
+          <p class="section-kicker">Responsible use</p>
+          <h2>Privacy and sharing</h2>
+          <p>Some detail pages can contain volunteer names, positions, assignments, or training exceptions. Use the dashboard only for authorized Scouting operational purposes. Do not repost personal-detail tables publicly or distribute screenshots more broadly than necessary.</p>
+        </article>
+
+        <article class="panel help-card" id="troubleshooting">
+          <p class="section-kicker">Support</p>
+          <h2>Troubleshooting</h2>
+          <dl class="help-definitions">
+            <dt>A value looks wrong</dt><dd>Clear all filters, confirm the refresh date, and compare the record with the linked workbook.</dd>
+            <dt>A district or record is missing</dt><dd>Clear search and page filters. If it remains missing, check whether the source workbook contains the expected row and district label.</dd>
+            <dt>The page looks empty</dt><dd>Reload the page. If a filter is active, return it to “Council” or “All.”</dd>
+            <dt>The table is cut off</dt><dd>Scroll inside the table horizontally, or print in landscape orientation.</dd>
+            <dt>Need assistance</dt><dd>Contact the council dashboard administrator or source-workbook owner. Include the council, page, refresh date, active filters, and a screenshot.</dd>
+          </dl>
+        </article>
+      </section>
+
+      <footer class="help-footer">
+        <p>Guide version 1 · Dashboard data refreshed October 26, 2026 · Use your browser’s Print command to create a PDF copy.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
